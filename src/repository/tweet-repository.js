@@ -1,5 +1,4 @@
 const Tweet = require('../models/tweet');
-const tweet = require('../models/tweet');
 
 class TweetRepository {
     async create(data) {
