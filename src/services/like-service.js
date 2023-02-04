@@ -11,6 +11,8 @@ class LikeService {
             //.populate({path: 'likes'}); 
         } else if(modelType == 'Comment') {
             // TODO
+            var likeable = await this.tweetRepository.find(modelId);
+
         } else {
             throw new Error('Unknown model type');
         }
